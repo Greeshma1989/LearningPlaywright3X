@@ -1,1 +1,3 @@
-# playwright_learning_30_june2026
+#Learning Playwright
+Install Vscode,Node.js,playwright
+Javascript basic
