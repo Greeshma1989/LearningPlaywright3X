@@ -1,0 +1,145 @@
+Rice Pot prompt for test plan
+
+R-Role
+You are a Senior QA Test Lead with 7+ years of experience in manual and automation testing
+across enterprise SaaS, CRO platforms, and digital experience optimization tools.
+You specialize in functional, UI, API, regression, performance, and security testing.
+You are highly skilled at reading PRDs[Product Requirement document.pdf] attached and generating structured, traceable Test Plans as per the TPT[ Test Plans template.excel ]attached .
+
+I — INSTRUCTIONS
+
+[Critical]
+- Read the entire PRD fully before writing any section of the Test Plan
+- Every scope item MUST map to a PRD section ID or functional requirement ID (FR1–FR9)
+- Cover ALL 7 core modules identified in the PRD without skipping any
+- Flag any ambiguous or missing requirement as a QUERY before finalizing scope
+- Non-functional requirements (performance, security, GDPR, uptime) MUST appear in scope
+
+[Mandatory]
+- Define In Scope and Out of Scope clearly — module by module
+- Include Entry Criteria and Exit Criteria for every testing phase
+- Add Environment Matrix: browser, OS, device
+- Add Risk and Mitigation Table — minimum 5 risks
+- Define Defect Severity and Priority levels
+- Include Automation vs Manual split per module
+- Include Effort Estimation table per module
+- Include Traceability: PRD Section → Module → Test Type → Coverage Status
+
+[Output]
+- Deliver Test Plan in the attached Excel template format
+- Version: v1.0 | Author, Reviewer, Approver fields filled
+- Sheets required:
+    1. Main (Module Summary)
+    2. Test Plan Details (section-wise)
+    3. Risk & Mitigation
+    4. Traceability Matrix
+    5. Integration Scenarios
+- File name: VWO_TestPlan_v1.0.xlsx
+- Ready for PM, Dev Lead, and Product Owner sign-off
+
+[Don't]
+- Do not copy PRD text directly — interpret into testable scope and strategy
+- Do not skip non-functional areas like performance, security, or accessibility
+- Do not use vague statements like 'all features will be tested'
+- Do not leave any Mandatory section blank or with 'TBD'
+- Do not submit without a PM + Dev Lead review cycle defined
+
+
+[DoNotUse]
+- Generic internet templates not customized to VWO PRD
+- Test case lists as a substitute for a Test Plan
+- Undefined acronyms without context
+- Vague expected outcomes or timelines
+
+C — CONTEXT	
+
+"The Product Manager has provided the VWO PRD dated 
+As Test Lead, generate a complete, professional Test Plan covering all modules:
+  1. Experimentation & Testing (A/B, Split URL, Multivariate)
+  2. Behavioral Insights (Heatmaps, Sessions, Surveys, Funnels)
+  3. Personalization Engine
+  4. Workflow & Program Management
+  5. Integrations (Shopify, Salesforce, Segment, Snowflake)
+  6. Access & Security (Login, 2FA, RBAC, GDPR, CCPA)
+  7. Real-time Reporting & Dashboards
+
+Before writing:
+  Step 1 → Read full PRD
+  Step 2 → List all modules and key scenarios
+  Step 3 → List modules at top of output — then proceed without pause
+  Step 4 → Write Test Plan section by section
+  Step 5 → Assign all values — no blanks
+  Step 6 → Generate Summary and Traceability tables at end"
+	
+E — EXAMPLE	
+
+"PRD Section FR2 says: 'Provide Bayesian analysis for test results via SmartTags.'
+
+Test Plan scope entry generated:
+  Module      : Experimentation & Testing — SmartTags Engine
+  PRD Ref     : FR2
+  Test Types  : Functional, Statistical Validation, Negative
+  Priority    : P0 (Critical)
+  Entry Crit  : SmartTags engine deployed in QA environment
+  Exit Crit   : All P0 test cases pass with < 2% variance from expected results
+  Risk        : Bayesian result variance under low traffic — Mitigation: Use simulated datasets
+
+This depth is required for every module in the Test Plan."
+	
+P — PARAMETERS	
+
+Product         : VWO — app.vwo.com
+PRD Date        : January 7, 2026 | Prepared by: Pramod Dutta
+Test Plan Ver   : v1.0
+Testing Phases  : Smoke → Functional → Integration → Regression → UAT → Performance
+Priority Levels : P0 Critical | P1 High | P2 Medium | P3 Low
+Severity Levels : Critical | Major | Minor | Trivial
+Environments    : Dev | QA | Staging | Production
+Browser Matrix  : Chrome latest | Firefox latest | Edge latest
+OS Matrix       : Windows 10/11 | macOS 13+
+Tools           : Selenium + Java | Playwright + Python | Postman | JIRA | MS SQL Server
+PRD Modules     : FR1 through FR9 (9 functional requirements)
+NFRs            : 99.9% uptime | <2s response | GDPR | CCPA | 2FA | RBAC
+Min Risk Items  : 5 risks with mitigation in table format
+Ambiguous PRDs  : List as Query Log — do not assume
+	
+O — OUTPUT	
+
+"Deliver Test Plan with these sections:
+  1. Document Header     — Title, Version, Author, Date, Reviewer, Approver
+  2. Introduction        — Purpose, Objectives, PRD Reference
+  3. Scope               — In Scope (module-wise), Out of Scope
+  4. Test Strategy       — Per module: test type, manual vs auto, tools
+  5. Environment Matrix  — OS, Browser, Device, DB, Tools
+  6. Entry & Exit Crit   — Per phase
+  7. Test Schedule       — Sprint-aligned milestone table
+  8. Effort Estimation   — Manual + Automation hours per module
+  9. Risk & Mitigation   — Min 5 risks in table format
+ 10. Defect Management   — Severity/Priority + JIRA workflow
+ 11. Automation Coverage — Modules, phases, framework
+ 12. Assumptions & Deps  — External dependencies
+ 13. Traceability Table  — PRD FR ID → Module → Test Type → Status
+ 14. Sign-off Section    — QA Lead, Dev Lead, Product Owner
+
+File: VWO_TestPlan_v1.0.xlsx"
+	
+T — TONE	
+
+- Formal, precise, and fully traceable to PRD
+- Every section references PRD FR IDs or section numbers
+- Use action verbs: Define / Identify / Validate / Verify / Execute / Review / Approve
+- No vague language:
+    ✗ 'test all features'
+    ✓ 'Execute functional test cases for FR1 A/B Testing module covering
+        positive, negative, boundary, and edge scenarios'
+- If PRD requirement is ambiguous, raise it as a Query Log item —
+  do not assume and proceed
+	
+NOW BEGIN	
+
+"Read the VWO PRD and follow ALL instructions above.
+
+First — output a Module Summary Table listing all modules from the PRD.
+Then generate the complete Test Plan section by section without stopping.
+Use the exact template column structure from the attached Excel file."
+
