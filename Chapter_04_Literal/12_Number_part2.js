@@ -9,6 +9,10 @@ let hexSep = 0xFF_FF;
 console.log("Separator 1_000_000:", million);      // 1000000
 console.log("Separator 0b1010_0001:", binarySep);  // 161
 console.log("Separator 0xFF_FF:", hexSep);         // 65535
+console.log("typeof 1_000_000::", typeof million); // "number"
+console.log("typeof 0b1010_0001:", typeof binarySep); // "bigint"
+console.log("typeof 0xFF_FF:", typeof hexSep); // "bigint"
+
 
 
 // --------------------------------------------------------
