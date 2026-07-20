@@ -1,0 +1,16 @@
+let a = 100;
+
+console.log(a++ + ++a +a++ + ++a);
+
+console.log(a);
+
+/*E RT formal
+sno     a       o/p
+  1   100     a=101 A=100
+  2  101     a=102 A=102
+  3  102     a=102 A=103
+  4  103     a=104 A=104
+  answer=100+102+102+104=408 a=104
+ output 408
+        104
+ */

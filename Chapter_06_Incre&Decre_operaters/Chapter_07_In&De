@@ -1,0 +1,22 @@
+   let a = 5; 
+let b = a-- - --a; 
+console.log(b, a);
+/*E RT formal
+sno     a      o/p
+1     5     A=5 a=4
+2     4     A=3 a=3
+b=5-3=2 a=3
+output 2 3
+ */
+
+
+
+let i = 1; 
+let r = i++ > 1 ? i++ : ++i; 
+console.log(r, i);
+/*E RT formal
+sno     a      o/p
+1     1    A=1 i=2  (2>1) ->r=3 i=3
+output 3 3
+ */
+—-
