@@ -11,7 +11,11 @@ This repository is a beginner-friendly JavaScript learning workspace that contai
 - Chapter_04_Literal/ - literal values, null/undefined handling, and number examples.
 - Chapter_05_operators/ - assignment, arithmetic, comparison, logical, string, ternary, and nested ternary operator examples.
 - Chapter_06_Incre&Decre_operaters/ - increment and decrement operator practice files.
-- Hackerank-interview-coding.js/ - interview-style JavaScript practice files, including conditional logic exercises.
+- Chapter_07_switch/ - nested switch, scenario-based switch, and switch question examples.
+- Chapter_08_Loops/ - loop practice materials.
+- Chapter_08_Userinputs/ - JavaScript input, Node.js input, and file input examples.
+- Hackerank-interview-coding/ - interview-style JavaScript practice files, including conditional logic exercises.
+- Task_23July/ - standalone task exercises for additional JavaScript practice.
 
 ## How to use this repository
 
@@ -21,16 +25,47 @@ This repository is a beginner-friendly JavaScript learning workspace that contai
 3. Practice by editing the code and observing the output.
 4. For input-based programs, enter the value in the terminal when prompted.
 
+Note about PowerShell and special characters: Quote paths that contain special characters such as `&` when running them in PowerShell. For example:
+
+```powershell
+node 'Chapter_06_Incre&Decre_operaters/24_Increment&decrement'
+```
+
 ## Suggested learning path
 
 - Start with Chapter_01_JS_Basics for basic syntax.
 - Move to Chapter_03_identifier and Chapter_04_Literal for core language rules.
 - Study Chapter_05_operators to understand how expressions work.
 - Finish with Chapter_06_Incre&Decre_operaters for increment/decrement practice.
-- Use the Hackerank-interview-coding.js folder for coding practice and interview-style exercises.
+- Continue with Chapter_07_switch, Chapter_08_Loops, and Chapter_08_Userinputs.
+- Use Hackerank-interview-coding and Task_23July for coding practice and interview-style exercises.
 
 ## Notes
 
 - File names are descriptive and usually indicate the topic being covered.
 - This repository is suitable for beginner-level JavaScript learning and practice.
 - You can run most files with Node.js directly from the terminal.
+
+## Try it
+
+- Interactive (prompts and accepts Enter):
+
+```powershell
+node 'Chapter_08_Userinputs/31_fileinput.js'
+```
+
+- Piped input (non-interactive):
+
+```powershell
+cmd /c "echo 15 | node \"Chapter_08_Userinputs\\31_fileinput.js\""
+```
+
+- From a file as stdin:
+
+```powershell
+node Chapter_08_Userinputs/31_fileinput.js < input.txt
+```
+
+## Requirements
+
+- Node.js version: recommend Node.js 14 or newer (current LTS or later).
